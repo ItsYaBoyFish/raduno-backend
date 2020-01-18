@@ -1,9 +1,14 @@
 const { Sequelize } = require('sequelize');
 
-var db = new Sequelize(process.env.JAWSDB || 'radunoDB', 'active', 'password', {
-  host: 'localhost',
-  dialect: 'mysql'
-});
+if (process.env.NODE_ENV="production") {
+  var db = new Sequelize(process.env.JAWSDB)
+} else {
+  var db = new Sequelize('radunoDB', 'active', 'password', {
+    host: 'localhost',
+    dialect: 'mysql'
+  });
+}
+
 
 db
 .authenticate()
