@@ -2,8 +2,8 @@
 // 1.) run npm install. Let that finish
 // 2.) Then in your console type 'npm run client-install'.
 // That will cd into the client folder and run npm install for you.
-const db = require('./DB Help/connection');
-const models = require('./DB Help/models/Export');
+const db = require('./dbHelp/connection');
+const models = require('./dbHelp/models/Export');
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3001;
