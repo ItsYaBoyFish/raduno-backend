@@ -16,7 +16,17 @@ const path = require ('path')
 // const someOtherPlaintextPassword = 'not_bacon';
 var hashHolder = '';
 
-app.use(express.static(path.join(__dirname, './client/build')));
+//CORS bypass
+app.use(function(req, res, next) {
+  //must be included these first two
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+  
+  next();
+});
+
 
 app.get('/', (req, res) => {
   // console.log('/ route hit');
