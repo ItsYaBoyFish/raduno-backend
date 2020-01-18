@@ -7,15 +7,13 @@
     "start": "node server"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/max-magura/raduno.git"
+    "type": "git" 
   },
   "author": "Max Magura, Austin Graves, Joel Buentello, Scott Nelson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/max-magura/raduno/issues"
+  
   },
-  "homepage": "https://github.com/max-magura/raduno#readme",
   "dependencies": {
     "bcrypt": "^3.0.7",
     "express": "^4.17.1",
