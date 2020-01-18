@@ -1,6 +1,10 @@
 {
   "name": "raduno-backend",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.13.0",
+    "npm": "^6.13.4"
+  },
   "description": "Backend API for Raduno",
   "main": "server.js",
   "scripts": {
@@ -20,7 +24,6 @@
   },
   "homepage": "https://github.com/ItsYaBoyFish/raduno-backend#readme",
   "dependencies": {
-    "npm": "^6.13.4",
     "bcrypt": "^3.0.7",
     "express": "^4.17.1",
     "mysql2": "^2.1.0",
