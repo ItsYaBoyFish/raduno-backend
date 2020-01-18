@@ -1,19 +1,24 @@
 {
-  "name": "raduno",
+  "name": "raduno-backend",
   "version": "1.0.0",
-  "description": "Raduno - Event Planning Application",
+  "description": "Backend API for Raduno",
   "main": "server.js",
   "scripts": {
-    "start": "node server"
+    "start": "node server.js"
   },
   "repository": {
-    "type": "git" 
+    "type": "git",
+    "url": "git+https://github.com/ItsYaBoyFish/raduno-backend.git"
   },
-  "author": "Max Magura, Austin Graves, Joel Buentello, Scott Nelson",
+  "keywords": [
+    "API"
+  ],
+  "author": "Austin Graves",
   "license": "ISC",
   "bugs": {
-  
+    "url": "https://github.com/ItsYaBoyFish/raduno-backend/issues"
   },
+  "homepage": "https://github.com/ItsYaBoyFish/raduno-backend#readme",
   "dependencies": {
     "bcrypt": "^3.0.7",
     "express": "^4.17.1",
